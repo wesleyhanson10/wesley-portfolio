@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Placeholder Images</title>
+</head>
+<body>
+    <h1>Placeholder Image Generator</h1>
+    <p>This script generates placeholder images. Copy the code below and run it in your browser console or save as an HTML file.</p>
+    
+    <script>
+    // Function to create and download placeholder images
+    function createPlaceholderImage(filename, width, height, text, bgColor, textColor) {
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        
+        // Fill background
+        ctx.fillStyle = bgColor;
+        ctx.fillRect(0, 0, width, height);
+        
+        // Add text
+        ctx.fillStyle = textColor;
+        ctx.font = 'bold 24px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(text, width / 2, height / 2);
+        
+        // Download
+        canvas.toBlob(function(blob) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+    }
+    
+    // Create all placeholder images
+    console.log('Starting placeholder image generation...');
+    
+    // Headshot
+    createPlaceholderImage('headshot.png', 300, 300, 'Professional Headshot', '#667eea', '#ffffff');
+    
+    setTimeout(() => createPlaceholderImage('hungerqs-1.png', 400, 300, 'HungerQs\nCAD Renders', '#f093fb', '#ffffff'), 500);
+    setTimeout(() => createPlaceholderImage('hungerqs-2.png', 400, 300, 'Circuit\nSchematics', '#f5576c', '#ffffff'), 1000);
+    setTimeout(() => createPlaceholderImage('hungerqs-3.png', 400, 300, 'Signal Processing\nResults', '#4facfe', '#ffffff'), 1500);
+    
+    setTimeout(() => createPlaceholderImage('loreal-1.png', 400, 300, 'Cell BioPhot\nDevice', '#fa709a', '#ffffff'), 2000);
+    setTimeout(() => createPlaceholderImage('loreal-2.png', 400, 300, 'Testing &\nValidation', '#fee140', '#333333'), 2500);
+    setTimeout(() => createPlaceholderImage('loreal-3.png', 400, 300, 'Roadmap\nDevelopment', '#30cfd0', '#ffffff'), 3000);
+    
+    setTimeout(() => createPlaceholderImage('walnut-1.png', 400, 300, 'HPLC\nAnalysis', '#a8edea', '#333333'), 3500);
+    setTimeout(() => createPlaceholderImage('walnut-2.png', 400, 300, 'GC\nResults', '#fed6e3', '#333333'), 4000);
+    setTimeout(() => createPlaceholderImage('walnut-3.png', 400, 300, 'Data\nVisualization', '#ff9a56', '#ffffff'), 4500);
+    
+    console.log('Image generation started! Check your downloads folder.');
+    </script>
+</body>
+</html>
