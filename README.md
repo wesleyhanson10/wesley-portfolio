@@ -12,20 +12,16 @@ A modern, colorful portfolio website showcasing my experience in biomedical engi
 
 ## 🎨 Features
 
-- Modern, colorful gradient design
 - Fully responsive layout (mobile, tablet, desktop)
-- Smooth animations and transitions
-- Interactive navigation
 - Project showcases with detailed information
 - Timeline of professional experience
-- Global upbringing section with country cards
+- Global upbringing
 
 ## 🚀 Deployment
 
 This portfolio is hosted on GitHub Pages:
 
-1. The site is deployed from the `main` branch
-2. Visit: `https://wesleyhanson10.github.io/wesley-portfolio/`
+Visit: `https://wesleyhanson10.github.io/wesley-portfolio/`
 
 ## 📝 To Update Content
 
@@ -44,9 +40,9 @@ This portfolio is hosted on GitHub Pages:
 
 ## 📧 Contact
 
-- Email: [wesleyhanson@gmail.com](mailto:wesleyhanson@gmail.com)
+- Email: [wezleyhanson@gmail.com](mailto:wezleyhanson@gmail.com)
 - Phone: (979) 328-2717
-- LinkedIn: [linkedin.com/in/wesleyhanson](https://linkedin.com/in/wesleyhanson)
+- LinkedIn: [linkedin.com/in/wesley-hanson2026](https://www.linkedin.com/in/wesley-hanson2026/)
 - GitHub: [github.com/wesleyhanson10](https://github.com/wesleyhanson10)
 
 ---
