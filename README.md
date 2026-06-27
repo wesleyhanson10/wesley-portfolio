@@ -4,7 +4,7 @@ A modern, colorful portfolio website showcasing my experience in biomedical engi
 
 ## 📄 Pages
 
-- **Home** - Hero section with featured project and quick stats
+- **Home** - Section with featured project and quick stats
 - **About** - Background, expertise, skills, and global upbringing
 - **Projects** - Detailed project cards for HungerQs, L'Oréal, and research
 - **Experience** - Timeline of internships, research, and career development
