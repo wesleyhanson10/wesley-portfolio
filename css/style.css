@@ -189,6 +189,16 @@ body {
   height: 100%;
 }
 
+/* Headshot Image */
+.headshot-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
 /* Stats Section */
 .stats {
   display: grid;
@@ -273,6 +283,14 @@ body {
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
+}
+
+.featured-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  object-fit: contain;
 }
 
 .image-placeholder {
@@ -407,6 +425,28 @@ body {
   color: var(--text-light);
   margin-bottom: 2rem;
   font-size: 1.1rem;
+}
+
+.world-map-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.world-map {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: block;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+}
+
+.map-caption {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  text-align: center;
 }
 
 .countries-grid {
@@ -603,9 +643,18 @@ body {
 
 .project-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin-bottom: 2rem;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  object-fit: contain;
+  max-height: 250px;
 }
 
 .project-links {
@@ -998,7 +1047,7 @@ body {
   }
 
   .timeline::before {
-    display: none;
+    left: 0;
   }
 
   .timeline-item {
@@ -1009,12 +1058,34 @@ body {
     order: 0;
   }
 
-  .timeline-marker {
-    display: none;
+  .project-images {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 
-  .timeline-content {
-    border-left: 4px solid var(--primary-color);
-    padding-left: 1.5rem;
+  .headshot-image {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+
+  .headshot-image {
+    max-width: 120px;
   }
 }
